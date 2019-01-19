@@ -19,9 +19,9 @@ services:
       - "${PWD}/default.conf:/etc/nginx/conf.d/default.conf:ro"
     security_opt:
       - label:disable
-  watchtower:
-    image: v2tec/watchtower
-    restart: always
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-    command: --interval 30
+#  watchtower:
+#    image: v2tec/watchtower
+#    restart: always
+#    volumes:
+#      - /var/run/docker.sock:/var/run/docker.sock
+#    command: --interval 30
